@@ -1,0 +1,242 @@
+[
+  {
+    "_id": "1",
+    "name": "Green Salad",
+    "imgUrl": "https://imgs.search.brave.com/UxYYVgTAckxGGMe8rX-fmV_2gwOU_wSlWWCG-y0Uazo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTM1/NDY1NDQwL3Bob3Rv/L2dyZWVuLXNhbGFk/LXdpdGgtc3RyYXdi/ZXJyaWVzLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1rQzVj/YjJYaVFybHhJcmJB/eUZfdE5WQ0t1aEdH/dEdnVHRIT1RWMUt2/SG00PQ",
+    "description": "A vibrant green salad bursts with fresh, crisp lettuce, tender spinach, and a medley of crunchy vegetables like cucumbers and bell peppers. Tossed with a zesty vinaigrette, it’s a refreshing, nutritious dish perfect for any meal.",
+    "category": "Salad",
+    "price": "25"
+  },
+  {
+    "_id": "2",
+    "name": "Grain-based Salads",
+    "imgUrl": "https://imgs.search.brave.com/GXhCW_fIzyRCHvPVexyJtSuzAys95MiaY11AHNOamTI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2VyaW91c2VhdHMu/Y29tL3RobWIvSjVz/ZlBGWjBqbVdQUDRL/QWtVTGFrQzVQR3Zz/PS8xNTAweDAvZmls/dGVyczpub191cHNj/YWxlKCk6bWF4X2J5/dGVzKDE1MDAwMCk6/c3RyaXBfaWNjKCkv/X19vcHRfX2Fib3V0/Y29tX19jb2V1c19f/cmVzb3VyY2VzX19j/b250ZW50X21pZ3Jh/dGlvbl9fc2VyaW91/c19lYXRzX19zZXJp/b3VzZWF0cy5jb21f/X2ltYWdlc19fMjAx/M19fMDFfXzIwMTMt/MDItMTMtYnVsZ2Fy/LXNhbGFkLWhlcmJz/LXdhbG51dHMtYXBy/aWNvdHMtMTQ0ZWFi/YmYwNGE2NGFjNWI2/NTQxYzY1YmZiODgx/ODAuanBn",
+    "description": "A grain-based salad features hearty grains like quinoa, farro, or barley, combined with colorful vegetables, herbs, and sometimes protein-rich additions like beans or feta cheese. Lightly dressed with a tangy vinaigrette, it offers a satisfying, nutritious option that's both filling and flavorful.",
+    "category": "Salad",
+    "price": "25"
+  },
+  {
+    "_id": "3",
+    "name": "Pasta Salads",
+    "imgUrl": "https://imgs.search.brave.com/Kr9Dz5fe8T5FMKKLK4pVCsLAqaJF_ZctRoh61C9bapU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL2htZy1wcm9k/L2ltYWdlcy9wYXN0/YS1zYWxhZC1yZWNp/cGVzLXNhbG1vbi0x/NjI4MjU3OTY4Lmpw/Zz9jcm9wPTEuMDB4/dzowLjcwNHhoOzAs/MC4wNTk0eGgmcmVz/aXplPTk4MDoq",
+    "description": "Pasta salad is a delightful dish that combines tender pasta with a variety of ingredients such as crisp vegetables, savory cheeses, and flavorful herbs. Tossed in a zesty dressing, it’s a versatile and satisfying option that's perfect for picnics or as a side dish.",
+    "category": "Salad",
+    "price": "25"
+  },
+  {
+    "_id": "4",
+    "name": "Fruit Salads",
+    "imgUrl": "https://imgs.search.brave.com/bc590Mfky61KTGTiS53dhlqwN_Jdlebc9ihkqQ5Kjew/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL2htZy1wcm9k/L2ltYWdlcy9mcnVp/dC1zYWxhZC12ZXJ0/aWNhbC1qcGctMTUy/MjI2NTgyNS5qcGc_/Y3JvcD0wLjc5MXh3/OjAuNzkweGg7MC4x/ODF4dywwLjExOXho/JnJlc2l6ZT05ODA6/Kg",
+    "description": "Fruit salads are a refreshing medley of vibrant, juicy fruits, often tossed with a hint of mint or a splash of citrus juice. They offer a naturally sweet, nutritious treat that’s perfect for a light dessert or a revitalizing snack.",
+    "category": "Salad",
+    "price": "25"
+  },
+  {
+    "_id": "5",
+    "name": "Margherita Pizza",
+    "imgUrl": "https://imgs.search.brave.com/0ApfGOL_i08qX6EB7s0oC8-bsUtziE8d23luw-7oU74/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTY3/OTA4MjYvcGhvdG8v/c2xpY2Utb2YtcGl6/emEtbWFyZ2FyaXRh/LWxpZnRlZC11cC5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/bzcyS1VSRGRlQ0R1/aXJyNGtTSy1KVDBR/ZGRRSnc5Z0pKT28y/dzNGOEd6TT0",
+    "description": "Margherita pizza showcases a simple yet classic combination of a crisp, thin crust topped with rich tomato sauce, fresh mozzarella, and aromatic basil leaves. This beloved Italian dish highlights the perfect harmony of its few high-quality ingredients for a truly satisfying experience.",
+    "category": "Pizza",
+    "price": "30"
+  },
+  {
+    "_id": "6",
+    "name": "Veggie Supreme Pizza",
+    "imgUrl": "https://imgs.search.brave.com/jj7NhQ8Qc2vAbCzsPZb9dFhOSDpJ0T6pxx_xe3AlxVI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c291dGhlcm5saXZp/bmcuY29tL3RobWIv/M3gzY0phaU92UTgt/M1l4dE1RWDB2dmgx/aFF3PS8xNTAweDAv/ZmlsdGVyczpub191/cHNjYWxlKCk6bWF4/X2J5dGVzKDE1MDAw/MCk6c3RyaXBfaWNj/KCkvMjY1MjQwMV9R/RlNTTF9TdXByZW1l/UGl6emFfMDAwNzIt/ZDkxMGE5MzViYTdk/NDQ4ZThjNzU0NWE5/NjNlZDcxMDEuanBn",
+    "description": "Veggie Supreme pizza is a flavorful feast, featuring a hearty base of tomato sauce and melted cheese topped with a vibrant array of fresh vegetables. From bell peppers and mushrooms to olives and onions, this pizza offers a delightful mix of textures and tastes in every bite.",
+    "category": "Pizza",
+    "price": "30"
+  },
+  {
+    "_id": "7",
+    "name": "Greek Pizza",
+    "imgUrl": "https://imgs.search.brave.com/9Yx_PHkrUjGE5zuIoHfJK2PvYv0O2eWKTntxHGlKYEk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTk2/OTM0MDUxNy9waG90/by92ZWdldGFyaWFu/LXBpenphLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1tNThF/ZWZEMjB1dHZaejh0/MFJ4amRUTWh2bGct/YXlvS3UzT19ZZHR6/RlZjPQ",
+    "description": "Greek pizza combines a crispy crust with a savory blend of ingredients inspired by Mediterranean cuisine. Topped with tangy feta cheese, olives, sun-dried tomatoes, and fresh herbs, it delivers a unique, flavorful twist on traditional pizza.",
+    "category": "Pizza",
+    "price": "30"
+  },
+  {
+    "_id": "8",
+    "name": "Corn and Jalapeño Pizza",
+    "imgUrl": "https://imgs.search.brave.com/0wQ6bUS7JbHY0fceKqx0QUc8DaAPpdFOSLZXiXQDsyQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQw/NzE4NzIxNS9waG90/by9waXp6YS10b25u/by5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9SUdrbmowSlZV/WTFPVmphd2VYX2pp/c1h0ZFBGN3pBYThU/VDlHYkVDVVd1Yz0",
+    "description": "Corn and Jalapeño pizza offers a delightful balance of sweet and spicy flavors, with juicy corn kernels and zesty jalapeños layered over a cheesy base. This combination creates a unique, tantalizing taste experience that's both vibrant and satisfying.",
+    "category": "Pizza",
+    "price": "30"
+  },
+  {
+    "_id": "9",
+    "name": "Cheeseburger",
+    "imgUrl": "https://imgs.search.brave.com/ij4SNUjixkEfC7uMkA34ZVUQCP-3Sm-Q-jPk8jqZFGE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTgy/NzQ0OTQzL3Bob3Rv/L2J1cmdlci5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9cGky/MElpZVhmOFVOazZT/ZUp5LWNIeHViYVZE/N0w1Um53MmkwUW84/dk55TT0",
+    "description": "A classic cheeseburger features a juicy beef patty topped with melted cheese, nestled between a soft, toasted bun. Often garnished with fresh lettuce, tomato, pickles, and a dollop of ketchup or mustard, it’s a timeless comfort food that delivers a perfect blend of savory, tangy, and creamy flavors.",
+    "category": "Burger",
+    "price": "30"
+  },
+  {
+    "_id": "10",
+    "name": "Hamburger",
+    "imgUrl": "https://imgs.search.brave.com/o5kDBoSHIq_Z_92iqrRM2gDl3rQu96B7DXsCue2IWRY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTIw/MjE1MjgxL3Bob3Rv/L2JhY29uLWJ1cmdl/ci5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9b2VOMXpsRFUw/X0NpWFhiU2FIOXVn/emRVcWFVbWFVWFVK/WG1Mbi1wdzRqTT0",
+    "description": "A hamburger is a quintessential American classic, featuring a juicy beef patty cooked to perfection and served in a soft, toasted bun. Often accompanied by traditional toppings like lettuce, tomato, pickles, and onions, it offers a satisfying and flavorful bite in every mouthful.",
+    "category": "Burger",
+    "price": "30"
+  },
+  {
+    "_id": "11",
+    "name": "Classic Veggie Burger",
+    "imgUrl": "https://imgs.search.brave.com/ZMPvr-hIHxMTX3jZEsbSeSzZUK3f0wacrtS8rufn_qE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzk0LzkyLzEw/LzM2MF9GXzk0OTIx/MDUzX0xjMDZ1YWJo/TnRNTlNLcTZINWdC/aFpWRG9JNm5LalhX/LmpwZw",
+    "description": "A classic veggie burger features a hearty, flavorful patty made from a blend of vegetables, legumes, and grains, served on a soft, toasted bun. Topped with fresh lettuce, tomato, and other vegetables, it offers a satisfying and nutritious alternative to traditional meat burgers.",
+    "category": "Burger",
+    "price": "30"
+  },
+  {
+    "_id": "12",
+    "name": "Spring Rolls",
+    "imgUrl": "https://imgs.search.brave.com/sXQhZVAaJj9ko15YeV3DBwxi-FXvo6Pgxc-VvIFynMQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTA4/MzkxNjcvcGhvdG8v/c3ByaW5nLXJvbGxz/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1ocUtsRTE5VTdn/QWVwandxX3ZIdndN/M0luMXExNDdieHFW/WHBJOW1TbVBnPQ",
+    "description": "Spring rolls are delicate, crisp rolls wrapped in translucent rice paper, often filled with a vibrant mix of fresh vegetables, herbs, and sometimes protein like shrimp or tofu. Served with a tangy dipping sauce, they offer a light, refreshing, and flavorful appetizer or snack.",
+    "category": "Rolls",
+    "price": "35"
+  },
+  {
+    "_id": "13",
+    "name": "Summer Rolls",
+    "imgUrl": "https://imgs.search.brave.com/y60IX_kj7p3Bp--yaujaafxqgjeJyjWD9OvnN9_Esdg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQ2/NzYxNjEzL3Bob3Rv/L3N1bW1lci1yb2xs/cy5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9aGRkS0xNOU8w/SGlfVmhucG9SOENt/b0dYMlhwMjBOQWRn/c25UVUE5MVNBUT0",
+    "description": "Summer rolls are light and refreshing rice paper rolls filled with a colorful combination of fresh vegetables, herbs, and sometimes shrimp or tofu. Often served with a flavorful dipping sauce, they offer a crisp, healthy, and satisfying bite perfect for warm weather or as an appetizer.",
+    "category": "Rolls",
+    "price": "35"
+  },
+  {
+    "_id": "14",
+    "name": "Paneer Tikka Roll",
+    "imgUrl": "https://imgs.search.brave.com/twMFdXpa_Yw8kGBnj2ZpDD0xaqHtOkGA0GgD1qWDbYw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9wYW5lZXItY2hl/ZXNlLXJvbGwtd2l0/aC1jaHV0bmV5XzEx/MDY0NTQtMTQzMTE1/LmpwZz9zaXplPTYy/NiZleHQ9anBn",
+    "description": "Paneer Tikka Roll features tender, marinated chunks of paneer (Indian cottage cheese) grilled to perfection, wrapped in a soft flatbread with crisp vegetables and flavorful sauces. This savory roll combines smoky, spiced cheese with fresh, tangy accompaniments for a delicious and satisfying meal.",
+    "category": "Rolls",
+    "price": "35"
+  },
+  {
+    "_id": "15",
+    "name": "Green Tea",
+    "imgUrl": "https://imgs.search.brave.com/lJq9VSJcv86EFlGPHxyUgbKI_BXjVJkoZOPXVGGckDM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzgwLzgwLzAx/LzM2MF9GXzgwODAw/MTUzX21aaFBwSHVS/TE9JQ3hGZ21SaUg3/R092RUxKWjJCNExv/LmpwZw",
+    "description": "Green tea is a light, refreshing beverage known for its delicate flavor and subtle, grassy notes. Rich in antioxidants and often enjoyed hot or iced, it offers a soothing and healthful drink with numerous potential benefits.",
+    "category": "Tea",
+    "price": "40"
+  },
+  {
+    "_id": "16",
+    "name": "Black Tea",
+    "imgUrl": "https://imgs.search.brave.com/K96EDBfPsB3qL5AJdcQgfxCDQpYmWb7BTZShKLM74Hc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQ2/MDQ5Mjc5NC9waG90/by9ibGFjay10ZWEt/aW4tZ2xhc3MtdGVh/cG90LWFuZC1jdXBz/LW9uLXJ1c3RpYy10/YWJsZS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9WDFpcDk0/TXNPUU5kbTZOMmw2/eWJraEU2c2ZuRHRf/MTlKTVN3VlE5VWJV/TT0",
+    "description": "Black tea is a robust, full-bodied brew with a rich, deep flavor and a dark amber color. Typically enjoyed with a splash of milk or a hint of sugar, it provides a bold, invigorating cup that's perfect for a morning pick-me-up or an afternoon break.",
+    "category": "Tea",
+    "price": "40"
+  },
+  {
+    "_id": "17",
+    "name": "Cheesecake",
+    "imgUrl": "https://imgs.search.brave.com/e-m-uPbYfXkaIS3Cmxwzoi6KHn0N1jUR70IH37eWuiY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE0/NzM2MDAwNy9waG90/by9jaGVlc2VjYWtl/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz0xdlVBOTRSOV9K/aThSbXV6eWhGU0M5/SFNpZGN5N3l0d3hn/dHZxNDVNTDBVPQ",
+    "description": "Cheesecake is a creamy, indulgent dessert with a smooth, velvety filling made from cream cheese, sugar, and eggs, set atop a buttery graham cracker crust. Often adorned with fruit toppings or a drizzle of caramel, it offers a rich, decadent treat that's both comforting and luxurious.",
+    "category": "Dessert",
+    "price": "45"
+  },
+  {
+    "_id": "18",
+    "name": "Chocolate Cake",
+    "imgUrl": "https://imgs.search.brave.com/oYjca5qENKnbFWbWkKZgjZgknNQzsRE3dL7ynqwxC7M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTU1/NTk4Mzc1L3Bob3Rv/L2Rlc3NlcnQtY2hv/Y29sYXRlLWNha2Uu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PURiQmswMjV0ZTQw/NVN1Zjh6TkJkZ3A2/N3kzaUpCOUxzeVhF/UlBRTVRBcVk9",
+    "description": "Chocolate cake is a decadent dessert featuring layers of rich, moist chocolate sponge, often paired with creamy chocolate frosting or ganache. Its deep, velvety flavor and indulgent texture make it a timeless favorite for any celebration or sweet craving.",
+    "category": "Dessert",
+    "price": "45"
+  },
+  {
+    "_id": "19",
+    "name": "Spaghetti",
+    "imgUrl": "https://imgs.search.brave.com/PMJo8D76O8sA4Ww_XpYTCj9XHJXO8gbAjlNIhlPRkvo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAzLzk1LzQ5LzQ5/LzM2MF9GXzM5NTQ5/NDk4M19nVmp4UVI3/RjBUOW4yRDlsbWNL/Z25iVjZZNXpyY0wy/OC5qcGc",
+    "description": "Spaghetti is a classic Italian pasta dish consisting of long, thin strands of pasta served with a variety of savory sauces. From a hearty marinara to a creamy Alfredo, its versatile nature makes it a comforting and satisfying choice for any meal.",
+    "category": "Pasta",
+    "price": "50"
+  },
+  {
+    "_id": "20",
+    "name": "Fettuccine",
+    "imgUrl": "https://imgs.search.brave.com/Q55v0IDyWa7FPdFGEgxiIq-Wl2VPxI4otkdgi-FjqS4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE0/MjM5MTQ2My9waG90/by9wYXN0YS1jYXJi/b25hcmEuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTdnTzlt/UmVORnpZMTBxc211/X1g0X0xaNDUtVWNW/UHR6cEhGLURPRnA2/Q2M9",
+    "description": "Fettuccine is a type of Italian pasta known for its wide, flat ribbons and smooth texture. Often paired with rich, creamy sauces like Alfredo or a hearty Bolognese, it provides a satisfying and luxurious dining experience.",
+    "category": "Pasta",
+    "price": "50"
+  },
+  {
+    "_id": "21",
+    "name": "Linguine",
+    "imgUrl": "https://imgs.search.brave.com/AJA44iRHRExmXw4E9_EEF4v5HtwvSruRoheg3-62_zU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTcx/Mzc1MjU1L3Bob3Rv/L3NlYWZvb2QtbGlu/Z3VpbmkuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPVQxQkxm/Ty1zU3YweU95SlFX/SGVsa1hRdHlTbTMt/Ti0wU09EaVQ5ZmE1/SnM9",
+    "description": "Linguine is a slender, flat pasta with a delicate, slightly oval shape, ideal for pairing with light sauces and seafood. Its subtle texture and mild flavor make it a versatile choice for dishes ranging from simple olive oil and garlic to rich tomato-based sauces.",
+    "category": "Pasta",
+    "price": "50"
+  },
+  {
+    "_id": "22",
+    "name": "Club Sandwich",
+    "imgUrl": "https://imgs.search.brave.com/X2jztr7nwvLldakLw5a4L6Nkddxuz8HWs61sLh2grws/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTg0/MzU0NDIyL3Bob3Rv/L2NsdWItc2FuZHdp/Y2guanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPW9la0tQMUxj/aXFpZHlJUGJUTWU2/Q0pwNE04aWFhc2t0/RWpxeDJPY3hwQVU9",
+    "description": "A club sandwich is a layered delight featuring three slices of toasted bread stacked with layers of turkey or chicken, crispy bacon, lettuce, tomato, and mayonnaise. This classic, hearty sandwich offers a satisfying mix of flavors and textures in every bite.",
+    "category": "Sandwich",
+    "price": "55"
+  },
+  {
+    "_id": "23",
+    "name": "Grilled Cheese Sandwich",
+    "imgUrl": "https://imgs.search.brave.com/drR3NGShzZcsWMyjZ_CL0gPtEmACRtiL0NRnYbE48Uc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE3/MjgyMTA3OS9waG90/by9ncmlsbGVkLWNo/ZWVzZS1zYW5kd2lj/aC1jbG9zZS11cC5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/MHlnU0RBVnh6NHNt/MTFQU0hiZTlCd19B/RVdtY0ZuVXYwc2VN/M3ZvZ213UT0",
+    "description": "Grilled cheese is a comforting classic featuring melty, gooey cheese sandwiched between two slices of perfectly crisp, buttery bread. Its warm, savory flavor and satisfying texture make it a timeless favorite for a simple yet indulgent meal.",
+    "category": "Sandwich",
+    "price": "55"
+  },
+  {
+    "_id": "24",
+    "name": "Rice Noodles",
+    "imgUrl": "https://imgs.search.brave.com/WgE_iPioBrdlDZ-wpI0ze-U7A0k2QURIaY97mGcvxUk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwMS5ueXQuY29t/L2ltYWdlcy8yMDE5/LzA4LzIyL2Rpbmlu/Zy9hcy1jb2xkLXJp/Y2Utbm9vZGxlcy9t/ZXJsaW5fMTU2NDQx/MTM4XzMxMzIzZWVk/LTNiNTMtNGM0ZS1h/YjRkLWM5NDVmNWJj/M2ZkNi1hcnRpY2xl/TGFyZ2UuanBnP3dp/ZHRoPTEyODAmcXVh/bGl0eT03NSZhdXRv/PXdlYnA",
+    "description": "Rice noodles are thin, delicate noodles made from rice flour, known for their light texture and subtle flavor. Often used in Asian cuisines, they absorb sauces beautifully and are perfect in dishes like stir-fries, soups, and salads.",
+    "category": "Noodles",
+    "price": "60"
+  },
+  {
+    "_id": "25",
+    "name": "Udon",
+    "imgUrl": "https://imgs.search.brave.com/U5aWXum61t2UEgyQwkN5jZLsFE-xuAh7zQVTz6TsO00/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTEz/MTc4MDM1NS9waG90/by91ZG9uLW5vb2Rs/ZS5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9WkVkdndKVkcz/T29RdnZLSVFsdWNz/N2k4T0Rob01lOFI1/eXlFakZvWkkyND0",
+    "description": "Udon are thick, chewy Japanese noodles made from wheat flour, known for their hearty texture and mild flavor. Typically served in a savory broth with various toppings like tempura, scallions, and mushrooms, they offer a comforting and satisfying noodle experience.",
+    "category": "Noodles",
+    "price": "60"
+  },
+  {
+    "_id": "26",
+    "name": "Ramen",
+    "imgUrl": "https://imgs.search.brave.com/jy0u2Rib-1zQ5iFGayCNMqzcmeb-zV1VILjaNCYdafA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTIx/OTk1ODI2OC9waG90/by9yYW1lbi5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9Zkw1/M1IzZDNjR0VLN2JT/M19FLXRyc3A3UUx3/S2xTSW1hQVNIRWJW/bDAybz0",
+    "description": "Ramen is a flavorful Japanese noodle soup featuring rich, savory broth and tender, springy noodles. Often garnished with ingredients like sliced pork, soft-boiled eggs, and fresh vegetables, it offers a comforting and customizable dish that's both hearty and satisfying.",
+    "category": "Noodles",
+    "price": "60"
+  },
+  {
+    "_id": "27",
+    "name": "Vanilla Ice Cream",
+    "imgUrl": "https://imgs.search.brave.com/qUN8SmsRFha2JtQtJTaqfdJU8Ot2JA3PP23eLubEJOk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTY1/MjA2MzA4L3Bob3Rv/L2ljZS1jcmVhbS5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/VDM0TE9lTlh3MTFB/WDhyX2JLZjRoc3RJ/djlUODVIWFV0TTlf/Vm9jWmxkZz0",
+    "description": "Vanilla ice cream is a classic, creamy dessert characterized by its smooth texture and rich, sweet flavor. Made with real vanilla beans or extracts, it offers a timeless, indulgent treat that complements a variety of toppings and desserts.",
+    "category": "Ice Cream",
+    "price": "65"
+  },
+  {
+    "_id": "28",
+    "name": "Chocolate Ice Cream",
+    "imgUrl": "https://imgs.search.brave.com/FPcl6af1FP7-8wLsplhOe2_yDHAmi5olk5bBqfZUYXw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTM2/ODA5ODIwL3Bob3Rv/L2Nob2NvbGF0ZS1p/Y2UtY3JlYW0tc3Rp/bGwtbGlmZS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9Mm9J/WHhwa3J6d3dURk5U/MFdLNkNsdnpobjJZ/X0Q0TFpzNGZSZ0ky/TVlWRT0",
+    "description": "Chocolate ice cream is a decadent, creamy treat that boasts a rich, velvety chocolate flavor. Infused with high-quality cocoa or chocolate, it offers a luscious, indulgent experience that's perfect for satisfying any sweet tooth.",
+    "category": "Ice Cream",
+    "price": "65"
+  },
+  {
+    "_id": "29",
+    "name": "Strawberry Ice Cream",
+    "imgUrl": "https://imgs.search.brave.com/rhabFedb6JT0PD9vsUVNwm9gW2ngs6r57Grkp6L8rMk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI2/NDQ0NzQzMS9waG90/by9zdHJhd2JlcnJ5/LWljZS1jcmVhbS13/aXRoLWZyZXNoLXN0/cmF3YmVycmllcy5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/QnFxMm5QREotZ1pI/VUh5NEVnNFJ1Z1Zp/LThiZzFsSmI0QjY2/c1kyVkh6az0",
+    "description": "Strawberry ice cream is a delightful, creamy dessert featuring a sweet and fruity flavor derived from ripe strawberries. With its vibrant pink hue and smooth texture, it offers a refreshing and indulgent treat that's perfect for a warm day.",
+    "category": "Ice Cream",
+    "price": "65"
+  },
+  {
+    "_id": "30",
+    "name": "Cookies and Cream Ice Cream",
+    "imgUrl": "https://imgs.search.brave.com/zdfq0RLVbavuKZzIMrgMGBiEOcko7M5zzJtXMYgJX9M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTIx/NjIzMjIwL3Bob3Rv/L2RlbGljaW91cy1p/Y2UtY3JlYW0uanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPXU2/YnZTUExrOUhXMTg0/VVhHczY0MUp6bVhj/Z0d1RmpwVlRXUzN4/QmJ0VW89",
+    "description": "Cookies and Cream ice cream combines a creamy, vanilla base with chunks of crunchy chocolate sandwich cookies. This indulgent treat offers a delightful contrast between smooth and crispy textures, creating a rich, nostalgic flavor that’s both satisfying and decadent.",
+    "category": "Ice Cream",
+    "price": "65"
+  }
+]
