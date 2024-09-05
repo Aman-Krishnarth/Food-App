@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Search, ShoppingBasket } from "lucide-react";
 import { Link } from "react-router-dom";
+import { StoreContext } from "../../context/StoreContext";
 
 function Navbar({ setShowLogin }) {
   const [menu, setMenu] = useState("Home");
+
+  const { getTotalCartAmount } = useContext(StoreContext);
 
   return (
     <nav className=" py-5 flex justify-between items-center ">
@@ -60,7 +63,7 @@ function Navbar({ setShowLogin }) {
         <Search size={35} />
         <Link to="/cart" className=" relative ">
           <ShoppingBasket size={35} />
-          <div className="h-3 w-3 bg-[tomato] rounded-md absolute top-[-8px] right-[-8px]"></div>
+          <div className={getTotalCartAmount() ? "h-3 w-3 bg-[tomato] rounded-md absolute top-[-8px] right-[-8px] animate-bounce " : ""}></div>
         </Link>
 
         <button

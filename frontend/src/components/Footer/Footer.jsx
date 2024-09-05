@@ -2,7 +2,10 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="text-[#d9d9d9] bg-[#323232] flex flex-col items-center gap-5 py-5 px-[8vw] pt-20 mt-24" id="footer">
+    <footer
+      className="text-[#d9d9d9] bg-[#323232] flex flex-col items-center gap-5 py-5 px-[8vw] pt-20 mt-24"
+      id="footer"
+    >
       <div className="w-full grid md:grid-cols-[2fr_1fr_1fr] gap-20">
         <div className="flex flex-col items-start gap-5">
           <div className="h-20 w-1/2">

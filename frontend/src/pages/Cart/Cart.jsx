@@ -1,15 +1,19 @@
 import React, { useContext } from "react";
 import { StoreContext } from "../../context/StoreContext";
+import { useNavigate } from "react-router-dom";
 
 function Cart() {
-  const { cartItems, foodList, removeFromCart } = useContext(StoreContext);
+  const { cartItems, foodList, removeFromCart, getTotalCartAmount } =
+    useContext(StoreContext);
+
+  const navigate = useNavigate();
 
   function handleItemRemove(id) {
     removeFromCart(id);
   }
 
   return (
-    <div className="mt-24 ">
+    <div className="mt-24 bg-white">
       <div>
         <div className="grid grid-cols-[1fr_1.5fr_1fr_1fr_1fr_0.5fr] items-center text-gray-500 text-[max(1vw,12px)] text-center">
           <p>Items</p>
@@ -61,21 +65,26 @@ function Cart() {
           <div>
             <div className="flex justify-between text-[#555]">
               <p>Subtotal: </p>
-              <p> {0} </p>
+              <p>Rs. {getTotalCartAmount()} </p>
             </div>
             <hr className="my-2" />
             <div className="flex justify-between text-[#555]">
               <p>Delievery Fee: </p>
-              <p> {0} </p>
+              <p>Rs. {getTotalCartAmount() ? 2 : 0} </p>
             </div>
             <hr className="my-2" />
             <div className="flex justify-between text-[#555]">
               <strong>Total: </strong>
-              <strong> {0} </strong>
+              <strong>
+                Rs. {getTotalCartAmount() ? getTotalCartAmount() + 2 : 0}{" "}
+              </strong>
             </div>
             <hr className="my-2" />
           </div>
-          <button className="border-none text-white bg-[tomato] w-1/2 py-3 rounded cursor-pointer]">
+          <button
+            className="border-none text-white bg-[tomato] w-1/2 py-3 rounded cursor-pointer]"
+            onClick={() => navigate("/order")}
+          >
             PROCEED TO CHECKOUT
           </button>
         </div>
