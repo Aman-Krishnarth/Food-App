@@ -30,5 +30,3 @@ app.get("/",(req,res)=>{
 app.listen(port, ()=>{
     console.log("SERVER RUNNING", port)
 })
-
-//mongodb+srv://foodUser:enpjHJxLdmwlrUqa@cluster0.wvwlg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
