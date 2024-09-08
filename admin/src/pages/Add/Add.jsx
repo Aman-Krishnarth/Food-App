@@ -1,19 +1,82 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 function Add() {
+  const [image, setImage] = useState(false);
+
+  const url = "http://localhost:4000";
+
+  const [data, setData] = useState({
+    name: "",
+    description: "",
+    price: "",
+    category: "Salad",
+  });
+
+  function onChangeHandler(event) {
+    const { name, value } = event.target;
+
+    setData({
+      ...data,
+      [name]: value,
+    });
+  }
+
+  useEffect(() => {
+    console.log(data);
+  }, [data]);
+
+  const onSumitHandler = async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData();
+
+    formData.append("name", data.name);
+    formData.append("description", data.description);
+    formData.append("price", +data.price);
+    formData.append("category", data.category);
+    formData.append("image", image);
+
+    axios
+      .post(`${url}/api/food/add`, formData)
+      .then((res) => {
+        if (res.data.success) {
+          setData({
+            name: "",
+            description: "",
+            price: "",
+            category: "Salad",
+          });
+		  setImage(false)
+        }
+      })
+      .catch((err) => {});
+  };
+
   return (
     <div className="text-[#6d6d6d] w-[70%] ml-[max(5vw,25px)] mt-12 text-sm">
-      <form action="" className="flex flex-col gap-5">
+      <form action="" className="flex flex-col gap-5" onSubmit={onSumitHandler}>
         <div className="flex flex-col gap-2">
           <p>Upload Image</p>
-          <label htmlFor="image">
+          <label htmlFor="image" className=" w-fit">
             <img
-              src="https://imgs.search.brave.com/Hw5dkcrqboJ-RIsKsLymxoqEt_uDr3DyismTGmSD_Gg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1LzY1LzIyLzQx/LzM2MF9GXzU2NTIy/NDE4MF9RTlJpUlFr/ZjlGdzBkS1JvWkd3/VWtubW1mazUxU3VT/Uy5qcGc"
-              alt=""
-              className="h-28 w-28"
+              src={`${
+                image
+                  ? URL.createObjectURL(image)
+                  : "https://imgs.search.brave.com/Hw5dkcrqboJ-RIsKsLymxoqEt_uDr3DyismTGmSD_Gg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1LzY1LzIyLzQx/LzM2MF9GXzU2NTIy/NDE4MF9RTlJpUlFr/ZjlGdzBkS1JvWkd3/VWtubW1mazUxU3VT/Uy5qcGc"
+              }`}
+              alt="dfsd"
+              className="h-28 w-28  cursor-pointer"
             />
           </label>
-          <input type="file" id="image" hidden required />
+          <input
+            onChange={(e) => setImage(e.target.files[0])}
+            type="file"
+            id="image"
+            hidden
+            required
+            className="cursor-pointer"
+          />
         </div>
 
         <div className="flex flex-col gap-2 w-[max(40%,280px)]">
@@ -23,6 +86,8 @@ function Add() {
             name="name"
             placeholder="Type Here"
             className="p-2"
+            onChange={onChangeHandler}
+            value={data.name}
           />
         </div>
 
@@ -34,13 +99,20 @@ function Add() {
             placeholder="Write content here"
             required
             className="p-2"
+            onChange={onChangeHandler}
+            value={data.description}
           ></textarea>
         </div>
 
         <div className="flex gap-7">
           <div className="flex flex-col gap-5">
             <p>Product Category</p>
-            <select name="category" className="w-max-28 p-2">
+            <select
+              name="category"
+              className="w-max-28 p-2"
+              onChange={onChangeHandler}
+              value={data.category}
+            >
               <option value="Salad">Salad</option>
               <option value="Rolls">Rolls</option>
               <option value="Dessert">Dessert</option>
@@ -61,10 +133,17 @@ function Add() {
               name="price"
               placeholder="Rs. 20"
               className="w-max-28 p-2"
+              onChange={onChangeHandler}
+              value={data.price}
             />
           </div>
         </div>
-        <button type="submit" className="max-w-28 border-none p-2 bg-black text-white cursor-pointer">ADD</button>
+        <button
+          type="submit"
+          className="max-w-28 border-none p-2 bg-black text-white cursor-pointer"
+        >
+          ADD
+        </button>
       </form>
     </div>
   );
