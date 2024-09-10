@@ -1,12 +1,24 @@
 import { createContext, useEffect, useState } from "react";
-import foodList from "../data/foodList.json";
-
 export const StoreContext = createContext(null);
+import axios from "axios"
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
   const url = "http://localhost:4000";
   const [token, setToken] = useState("")
+  const [foodList, setFoodList] = useState([])
+
+  const fetchFoodList = async ()=>{
+    axios.get(url+"/api/food/list").then((res)=>{
+      setFoodList(res.data.data)
+    }).catch((err)=>{
+      console.log("FETCH FOOD LIST CATCH")
+    })
+  }
+
+  useEffect(()=>{
+    fetchFoodList()
+  },[])
 
   const addToCart = (itemId) => {
     if (!cartItems[itemId]) {

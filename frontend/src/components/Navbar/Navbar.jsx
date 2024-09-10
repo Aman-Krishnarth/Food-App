@@ -1,12 +1,21 @@
 import React, { useContext, useState } from "react";
 import { Search, ShoppingBasket } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { StoreContext } from "../../context/StoreContext";
+import "./Navbar.css";
 
 function Navbar({ setShowLogin }) {
   const [menu, setMenu] = useState("Home");
 
   const { getTotalCartAmount, token, setToken } = useContext(StoreContext);
+
+  const navigate = useNavigate();
+
+  const logout = () => {
+    localStorage.removeItem("token");
+    setToken("");
+    navigate("/");
+  };
 
   return (
     <nav className=" py-5 flex justify-between items-center ">
@@ -72,7 +81,7 @@ function Navbar({ setShowLogin }) {
           ></div>
         </Link>
 
-        {!token ? (
+        {!token && !localStorage.getItem("token") ? (
           <button
             className="bg-red-400 bg-transparent text-base text-[#49557e] border border-solid border-[tomato] py-3 px-8 rounded-[50px] hover:bg-[#fff4f2] duration-300 ease-in-out"
             onClick={() => setShowLogin(true)}
@@ -80,31 +89,34 @@ function Navbar({ setShowLogin }) {
             Sign in
           </button>
         ) : (
-          <div className="relative">
+          <div className="relative navbarProfile hover:cursor-pointer">
             <img
               src="https://imgs.search.brave.com/NLvoeeWrIirNTadp9zD1n3QlRhPHiZdYWPt3IlWSM9k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA0LzYyLzYzLzY1/LzM2MF9GXzQ2MjYz/NjUwMl85Y0RBWXV5/VnZCWTRxWUpsSGpX/N3ZxYXI1SFlTOGg4/eC5qcGc"
               alt=""
               className="h-12 w-12"
             />
-            <ul className="absolute hidden right-0 z-50">
-              <li>
+            <ul className="navbarProfileDropDown py-3 px-6">
+              <li className="flex gap-2 items-center hover:cursor-pointer hover:text-[tomato]">
                 {" "}
                 <img
                   src="https://imgs.search.brave.com/qM1naN6jZNKXzRho06G2UYA2WZLTGJY5qGCY7MHSA0s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4x/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvaGVyb2ljb25z/LXVpLzI0L3Nob3Bw/aW5nLWJhZy01MTIu/cG5n"
                   alt=""
-                  className="h-12 w-12"
+                  className="h-1/3 w-1/3"
                 />{" "}
-                <p>Orders</p>
+                <p className="">Orders</p>
               </li>
               <hr />
-              <li>
+              <li
+                className="flex gap-2 items-center hover:cursor-pointer hover:text-[tomato]"
+                onClick={logout}
+              >
                 {" "}
                 <img
                   src="https://imgs.search.brave.com/EbIpx30EHh6PRlKRNf2c9nrc0gDBzg2YQ2btgDjSqO0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzUyLzI2Lzgw/LzM2MF9GXzU1MjI2/ODAzMF9SU3YzMGty/S3JISU5DbnFpVERP/SllDR3FVRXlpY0lV/Mi5qcGc"
                   alt=""
-                  className="h-12 w-12"
+                  className="h-1/3 w-1/3"
                 />{" "}
-                <p>Logout</p>
+                <p className="">Logout</p>
               </li>
             </ul>
           </div>
