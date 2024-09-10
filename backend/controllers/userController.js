@@ -82,7 +82,7 @@ const registerUser = async (req, res) => {
       const token = createToken(createdUser._id);
 
       res.json({
-        sucess: true,
+        success: true,
         token,
       });
     });
