@@ -34,9 +34,7 @@ function LoginPopup({ setShowLogin }) {
     await axios
       .post(newUrl, data)
       .then((res) => {
-        console.log(res);
         if (res.data.success) {
-          console.log("success mein hu");
           setToken(res.data.token);
           localStorage.setItem("token", res.data.token);
           setShowLogin(false);
@@ -46,7 +44,7 @@ function LoginPopup({ setShowLogin }) {
       })
 
       .catch((err) => {
-        console.log("login axios errors");
+        console.log("LOGIN AXIOS ERROR");
       });
   };
 

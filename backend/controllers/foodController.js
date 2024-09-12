@@ -19,8 +19,7 @@ const addFood = async (req, res) => {
       message: "Food Added",
     });
   } catch (error) {
-    console.log("food controller mein error");
-    console.log(error);
+    console.log("FOOD CONTROLLER ERROR");
     res.json({ success: false, message: "Error in adding food" });
   }
 };
@@ -35,7 +34,7 @@ const listFood = async (req, res) => {
       data: foods,
     });
   } catch (error) {
-    console.log("list food mein error");
+    console.log("LIST FOOD ERROR");
 
     res.json({
       success: false,
@@ -58,7 +57,7 @@ const removeFood = async (req, res) => {
       message: "Food removed successfully",
     });
   } catch (error) {
-    console.log("remove food mein error");
+    console.log("REMOVE FOOD ERROR");
 
     res.json({
       success: false,

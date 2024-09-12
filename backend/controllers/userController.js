@@ -87,8 +87,7 @@ const registerUser = async (req, res) => {
       });
     });
   } catch (error) {
-    console.log("register user error");
-    console.log(error);
+    console.log("REGISTER USER ERROR");
     res.json({ success: false, message: "error" });
   }
 };
