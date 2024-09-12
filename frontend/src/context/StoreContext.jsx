@@ -43,7 +43,6 @@ const StoreContextProvider = (props) => {
   }, []);
 
   const addToCart = async (itemId) => {
-
     if (!cartItems[itemId]) {
       setCartItems((prev) => ({ ...prev, [itemId]: 1 }));
     } else {
@@ -60,7 +59,6 @@ const StoreContextProvider = (props) => {
   };
 
   const removeFromCart = async (itemId) => {
-
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
 
     if (token) {

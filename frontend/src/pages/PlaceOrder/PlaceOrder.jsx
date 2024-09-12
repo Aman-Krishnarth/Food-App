@@ -1,9 +1,13 @@
 import React, { useContext, useState } from "react";
 import { StoreContext } from "../../context/StoreContext";
+import {useNavigate} from "react-router-dom"
+import axios from "axios";
 
 function PlaceOrder() {
   const { getTotalCartAmount, token, foodList, cartItems, url } =
     useContext(StoreContext);
+
+    const navigate = useNavigate()
 
   const [data, setData] = useState({
     firstName: "",
@@ -35,11 +39,28 @@ function PlaceOrder() {
         orderItems.push(itemInfo);
       }
     });
+
+    let orderData = {
+      address: data,
+      items: orderItems,
+      amount: getTotalCartAmount() + 2,
+    };
+
+    let response = await axios.post(url + "/api/order/place", orderData, {
+      headers: { token },
+    });
+
+    if (response.data.success) {
+      const { session_url } = response.data;
+      window.location.replace(session_url);
+    } else {
+      console.log(response.data.message);
+    }
   };
 
   return (
     <form
-      className="flex items-start justify-between gap-12 mt-24"
+      className="flex items-start justify-between gap-12 mt-24 text-black"
       onSubmit={placeOrder}
     >
       <div className="w-full max-w-[max(30%,500px)]">
@@ -47,6 +68,7 @@ function PlaceOrder() {
 
         <div className="flex gap-3">
           <input
+            required
             type="text"
             placeholder="First Name"
             className="mb-4 w-full p-2 border-[1px_solid_#c5c5c5] rounded outline-[tomato]"
@@ -56,6 +78,7 @@ function PlaceOrder() {
           />
 
           <input
+            required
             type="text"
             placeholder="Last Name"
             className="mb-4 w-full p-2 border-[1px_solid_#c5c5c5] rounded outline-[tomato]"
@@ -66,6 +89,7 @@ function PlaceOrder() {
         </div>
 
         <input
+          required
           type="email"
           placeholder="Email"
           className="mb-4 w-full p-2 border-[1px_solid_#c5c5c5] rounded outline-[tomato]"
@@ -74,6 +98,7 @@ function PlaceOrder() {
           onChange={onchangeHandler}
         />
         <input
+          required
           type="text"
           placeholder="Street"
           className="mb-4 w-full p-2 border-[1px_solid_#c5c5c5] rounded outline-[tomato]"
@@ -83,6 +108,7 @@ function PlaceOrder() {
         />
         <div className="flex gap-3">
           <input
+            required
             type="text"
             placeholder="City"
             className="mb-4 w-full p-2 border-[1px_solid_#c5c5c5] rounded outline-[tomato]"
@@ -92,6 +118,7 @@ function PlaceOrder() {
           />
 
           <input
+            required
             type="text"
             placeholder="State"
             className="mb-4 w-full p-2 border-[2px_solid_#c5c5c5] rounded outline-[tomato]"
@@ -102,6 +129,7 @@ function PlaceOrder() {
         </div>
         <div className="flex gap-3">
           <input
+            required
             type="text"
             placeholder="Zip Code"
             className="mb-4 w-full p-2 border-[1px_solid_#c5c5c5] rounded outline-[tomato]"
@@ -111,6 +139,7 @@ function PlaceOrder() {
           />
 
           <input
+            required
             type="text"
             placeholder="Country"
             className="mb-4 w-full p-2 border-[1px_solid_#c5c5c5] rounded outline-[tomato]"
@@ -120,6 +149,7 @@ function PlaceOrder() {
           />
         </div>
         <input
+          required
           type="text"
           placeholder="Phone"
           className="mb-4 w-full p-2 border-[1px_solid_#c5c5c5] rounded outline-[tomato]"

@@ -22,9 +22,6 @@ function Add() {
     });
   }
 
-  useEffect(() => {
-    console.log(data);
-  }, [data]);
 
   const onSumitHandler = async (event) => {
     event.preventDefault();

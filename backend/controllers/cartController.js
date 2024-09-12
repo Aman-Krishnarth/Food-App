@@ -3,9 +3,7 @@ import userModel from "../models/userModel.js";
 // add items to user cart
 const addToCart = async (req, res) => {
   try {
-    console.log(req.body.userId);
     let userData = await userModel.findById(req.body.userId);
-    // console.log(userData)
 
     let cartData = await userData.cartData;
 
@@ -33,14 +31,10 @@ const addToCart = async (req, res) => {
 // remove items from user cart
 const removeFromCart = async (req, res) => {
 
-  console.log("remove from cart mein hu")
-
   try {
     let userData = await userModel.findById(req.body.userId);
 
     let cartData = await userData.cartData;
-
-    console.log(`cartData = ${cartData}`)
 
     if (cartData[req.body.itemId] > 0) {
       cartData[req.body.itemId]-=1;
