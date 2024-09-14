@@ -96,7 +96,9 @@ function Navbar({ setShowLogin }) {
               className="h-12 w-12"
             />
             <ul className="navbarProfileDropDown py-3 px-6">
-              <li className="flex gap-2 items-center hover:cursor-pointer hover:text-[tomato]">
+              <li className="flex gap-2 items-center hover:cursor-pointer hover:text-[tomato]"
+              onClick={()=>navigate("/myorders")}
+              >
                 {" "}
                 <img
                   src="https://imgs.search.brave.com/qM1naN6jZNKXzRho06G2UYA2WZLTGJY5qGCY7MHSA0s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4x/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvaGVyb2ljb25z/LXVpLzI0L3Nob3Bw/aW5nLWJhZy01MTIu/cG5n"
