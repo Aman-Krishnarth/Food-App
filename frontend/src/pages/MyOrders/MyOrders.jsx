@@ -26,13 +26,13 @@ function MyOrders() {
 
   return (
     <div className=" my-12">
-      <h2>My Orders</h2>
+      <h2 className="text-3xl font-bold tracking-wide">My Orders</h2>
       <div className="flex flex-col gap mt-7">
         {data.map((order, index) => {
           return (
             <div
               key={index}
-              className="grid grid-cols-[1fr_2fr_1fr] lg:grid-cols-[0.5fr_2fr_1fr_1fr_2fr_1fr] items-center gap-y-1 lg:gap-7 text-sm py-2 px-5 text-[#454545] border border-solid border-[tomato]"
+              className="grid grid-cols-[1fr_2fr_1fr] lg:grid-cols-[0.5fr_2fr_1fr_1fr_2fr_1fr] items-center gap-y-1 lg:gap-7 text-sm py-3 px-5 text-[#454545] border border-solid border-[tomato] my-3 rounded-lg"
             >
               <img
                 src="https://imgs.search.brave.com/bdNhtYEGLSUvyCP5na8OGUNY32NXHbFpSdFw2X9HNAo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA4LzEzLzYzLzg2/LzM2MF9GXzgxMzYz/ODYzOF80YWxjcTNV/WkNqenRHV0N3WmF3/OGRkZDBvV1pqSU9y/Yi5qcGc"

@@ -77,7 +77,7 @@ function PlaceOrder() {
             required
             type="text"
             placeholder="First Name"
-            className="mb-4 w-full p-2 border-[1px_solid_#c5c5c5] rounded outline-[tomato]"
+            className="mb-4 w-full p-2 border border-solid border-[#c5c5c5] rounded outline-[tomato]"
             name="firstName"
             value={data.firstName}
             onChange={onchangeHandler}
@@ -87,7 +87,7 @@ function PlaceOrder() {
             required
             type="text"
             placeholder="Last Name"
-            className="mb-4 w-full p-2 border-[1px_solid_#c5c5c5] rounded outline-[tomato]"
+            className="mb-4 w-full p-2 border border-solid border-[#c5c5c5] rounded outline-[tomato]"
             name="lastName"
             value={data.lastName}
             onChange={onchangeHandler}
@@ -98,7 +98,7 @@ function PlaceOrder() {
           required
           type="email"
           placeholder="Email"
-          className="mb-4 w-full p-2 border-[1px_solid_#c5c5c5] rounded outline-[tomato]"
+          className="mb-4 w-full p-2 border border-solid border-[#c5c5c5] rounded outline-[tomato]"
           name="email"
           value={data.email}
           onChange={onchangeHandler}
@@ -107,7 +107,7 @@ function PlaceOrder() {
           required
           type="text"
           placeholder="Street"
-          className="mb-4 w-full p-2 border-[1px_solid_#c5c5c5] rounded outline-[tomato]"
+          className="mb-4 w-full p-2 border border-solid border-[#c5c5c5] rounded outline-[tomato]"
           name="street"
           value={data.street}
           onChange={onchangeHandler}
@@ -117,7 +117,7 @@ function PlaceOrder() {
             required
             type="text"
             placeholder="City"
-            className="mb-4 w-full p-2 border-[1px_solid_#c5c5c5] rounded outline-[tomato]"
+            className="mb-4 w-full p-2 border border-solid border-[#c5c5c5] rounded outline-[tomato]"
             name="city"
             value={data.city}
             onChange={onchangeHandler}
@@ -138,7 +138,7 @@ function PlaceOrder() {
             required
             type="text"
             placeholder="Zip Code"
-            className="mb-4 w-full p-2 border-[1px_solid_#c5c5c5] rounded outline-[tomato]"
+            className="mb-4 w-full p-2 border border-solid border-[#c5c5c5] rounded outline-[tomato]"
             name="zipcode"
             value={data.zipcode}
             onChange={onchangeHandler}
@@ -148,7 +148,7 @@ function PlaceOrder() {
             required
             type="text"
             placeholder="Country"
-            className="mb-4 w-full p-2 border-[1px_solid_#c5c5c5] rounded outline-[tomato]"
+            className="mb-4 w-full p-2 border border-solid border-[#c5c5c5] rounded outline-[tomato]"
             name="country"
             value={data.country}
             onChange={onchangeHandler}
@@ -158,7 +158,7 @@ function PlaceOrder() {
           required
           type="text"
           placeholder="Phone"
-          className="mb-4 w-full p-2 border-[1px_solid_#c5c5c5] rounded outline-[tomato]"
+          className="mb-4 w-full p-2 border border-solid border-[#c5c5c5] rounded outline-[tomato]"
           name="phone"
           value={data.phone}
           onChange={onchangeHandler}

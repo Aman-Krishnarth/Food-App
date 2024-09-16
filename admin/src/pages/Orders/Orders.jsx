@@ -85,9 +85,9 @@ function Orders() {
 			 onChange={(event)=>statusHandler(event,order._id)} 
 			 value={order.status}
 			  >
-                <option value="Food Processing">Food Processing</option>
-                <option value="Out for delivery">Out for delivery</option>
-                <option value="Delivered">Delivered</option>
+                <option value="Food Processing" className="cursor-pointer">Food Processing</option>
+                <option value="Out for delivery" className="cursor-pointer">Out for delivery</option>
+                <option value="Delivered" className="cursor-pointer">Delivered</option>
               </select>
             </div>
           );
