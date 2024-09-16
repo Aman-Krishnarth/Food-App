@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 function List() {
-  const url = "http://localhost:4000";
+  const url = "https://food-del-backend-cgwy.onrender.com/";
   const [list, setList] = useState([]);
 
   const fetchList = async () => {

@@ -6,7 +6,7 @@ function Orders() {
 
   const fetchAllOrders = async () => {
     await axios
-      .get("http://localhost:4000/api/order/list")
+      .get("https://food-del-backend-cgwy.onrender.com/api/order/list")
       .then((res) => {
         console.log(res);
         setOrders(res.data.data);
@@ -21,7 +21,7 @@ function Orders() {
   }, []);
 
   const statusHandler = async (event,orderId)=>{
-	const response = await axios.post("http://localhost:4000/api/order/status",{orderId, status:event.target.value})
+	const response = await axios.post("https://food-del-backend-cgwy.onrender.com/api/order/status",{orderId, status:event.target.value})
 
 	if(response.data.success){
 		await fetchAllOrders()

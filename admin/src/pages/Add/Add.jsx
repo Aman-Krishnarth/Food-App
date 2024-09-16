@@ -4,7 +4,7 @@ import axios from "axios";
 function Add() {
   const [image, setImage] = useState(false);
 
-  const url = "http://localhost:4000";
+  const url = "https://food-del-backend-cgwy.onrender.com/";
 
   const [data, setData] = useState({
     name: "",
