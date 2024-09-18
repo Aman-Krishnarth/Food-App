@@ -27,14 +27,14 @@ function App() {
       {showLogin ? <LoginPopup setShowLogin={setShowLogin} /> : null}
 
       {showLoading ? (
-        <div className="flex h-screen w-screen items-center justify-center">
+        <div className="flex flex-col h-screen w-screen items-center justify-center">
           <button
             type="button"
             className="flex items-center rounded-lg bg-green-700 px-4 py-2 text-white"
             disabled
           >
             <svg
-              className="mr-3 h-5 w-5 animate-spin text-white"
+              className="mr-3 h-7 w-7 animate-spin text-white"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -53,8 +53,12 @@ function App() {
                 d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
               ></path>
             </svg>
-            <span className="font-medium"> Processing... </span>
+            <span className="font-medium text-3xl"> Loading... </span>
           </button>
+          <p className="text-[red] text-center text-xl">
+            Hang tight! This might take 15-20 seconds to load. Your patience is
+            appreciated!
+          </p>
         </div>
       ) : (
         <>
