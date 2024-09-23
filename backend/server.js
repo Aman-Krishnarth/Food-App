@@ -12,7 +12,11 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 // middlewares
-app.use(cors());
+app.use(cors({
+  origin: ["https://food-del-frontend-fgfb.onrender.com/"],
+  methods: ["POST",'GET'],
+  credentials: true
+}));
 app.use(express.json());
 
 //db connection
