@@ -6,7 +6,7 @@ function Orders() {
 
   const fetchAllOrders = async () => {
     await axios
-      .get("https://food-del-backend-cgwy.onrender.com/api/order/list")
+      .get("https://food-app-backend-r2u6.onrender.com/api/order/list")
       .then((res) => {
         console.log(res);
         setOrders(res.data.data);
@@ -20,14 +20,16 @@ function Orders() {
     fetchAllOrders();
   }, []);
 
-  const statusHandler = async (event,orderId)=>{
-	const response = await axios.post("https://food-del-backend-cgwy.onrender.com/api/order/status",{orderId, status:event.target.value})
+  const statusHandler = async (event, orderId) => {
+    const response = await axios.post(
+      "https://food-app-backend-r2u6.onrender.com/api/order/status",
+      { orderId, status: event.target.value }
+    );
 
-	if(response.data.success){
-		await fetchAllOrders()
-	}
-
-  }
+    if (response.data.success) {
+      await fetchAllOrders();
+    }
+  };
 
   return (
     <div className=" w-full p-7">
@@ -81,13 +83,20 @@ function Orders() {
 
               <p> Rs. {order.amount} </p>
 
-              <select className="text-black bg-[#ffe8e4] border border-solid border-[tomato] w-[max(10vw,120px)] p-1 lg:p-2 outline-none cursor-pointer text-sm lg:text-base"
-			 onChange={(event)=>statusHandler(event,order._id)} 
-			 value={order.status}
-			  >
-                <option value="Food Processing" className="cursor-pointer">Food Processing</option>
-                <option value="Out for delivery" className="cursor-pointer">Out for delivery</option>
-                <option value="Delivered" className="cursor-pointer">Delivered</option>
+              <select
+                className="text-black bg-[#ffe8e4] border border-solid border-[tomato] w-[max(10vw,120px)] p-1 lg:p-2 outline-none cursor-pointer text-sm lg:text-base"
+                onChange={(event) => statusHandler(event, order._id)}
+                value={order.status}
+              >
+                <option value="Food Processing" className="cursor-pointer">
+                  Food Processing
+                </option>
+                <option value="Out for delivery" className="cursor-pointer">
+                  Out for delivery
+                </option>
+                <option value="Delivered" className="cursor-pointer">
+                  Delivered
+                </option>
               </select>
             </div>
           );
