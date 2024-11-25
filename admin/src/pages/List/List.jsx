@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 function List() {
-  const url = "https://food-app-backend-r2u6.onrender.com/";
+  const url = "https://food-app-backend-r2u6.onrender.com";
   const [list, setList] = useState([]);
 
   const fetchList = async () => {

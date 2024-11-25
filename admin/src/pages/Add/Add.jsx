@@ -4,7 +4,7 @@ import axios from "axios";
 function Add() {
   const [image, setImage] = useState(false);
 
-  const url = "https://food-app-backend-r2u6.onrender.com/";
+  const url = "https://food-app-backend-r2u6.onrender.com";
 
   const [data, setData] = useState({
     name: "",
